@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="bestrongcalc.css">
+<title>Bestrongcalculation</title>
+
+<script>
+            
+        function calc()
+        {
+            //input cucc a számok bekérése
+            var n1 = parseInt(document.getElementById('bonus').value);
+            var n2 = parseInt(document.getElementById('ora').value);
+            var n3 = parseInt(document.getElementById('ber').value);
+            var result=parseInt(n1) * parseInt(n2) / parseInt(n3);
+            if(!isNaN(result))
+            {
+            document.getElementById('eredmeny').value=((n1*n2)/n3);
+            }
+            
+        }
+        
+</script>
+
+
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <a href="https://bestrong.com/"><image src="logo.png"></a>
+        </div>
+        <div class="tulora">
+            <h2>Túlóraminusz kalkulátor.</h2>
+        </div>
+        <div class="list">
+                <form>
+                    <label for="bonusz">Ide írd az óránkénti bónuszod!</label>
+                    <input type="text" name="Óránkénti bónuszod?" id="bonus" required/><br/><br/>
+                    <label for="ledolgora">Ide írd a ledolgozott óraszámod!</label>
+                    <input type="text" name="Ledolgozott óraszámod?" id="ora" required/><br/><br/>
+                    <label for="alapber">Ide írd a óránkénti alapbéred!</label>
+                    <input type="text" name="óránkénti normál béred?" id="ber" required/><br/><br/>
+                </form>
+            <input type="text" id="eredmeny"/>
+            <button onclick="calc();">befizetett minusz órád</button>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
