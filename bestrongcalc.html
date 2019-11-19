@@ -15,10 +15,10 @@
         function calc()
         {
             //input cucc a számok bekérése
-            var n1 = parseFloat(document.getElementById('bonus').value);
-            var n2 = parseFloat(document.getElementById('ora').value);
-            var n3 = parseFloat(document.getElementById('ber').value);
-            var result=parseFloat(n1) * parseFloat(n2) / parseFloat(n3);
+            var n1 = parseInt(document.getElementById('bonus').value);
+            var n2 = parseInt(document.getElementById('ora').value);
+            var n3 = parseInt(document.getElementById('ber').value);
+            var result=parseInt(n1) * parseInt(n2) / parseInt(n3);
             if(!isNaN(result))
             {
             document.getElementById('eredmeny').value=((n1*n2)/n3);
@@ -33,18 +33,18 @@
 <body>
     <div class="content">
         <div class="logo">
-            <a href="https://bestrong.com/"><image src="index.png"></a>
+            <a href="https://bestrong.com/"><image src="logo.png"></a>
         </div>
         <div class="tulora">
-            <h2>Túlóraminusz kalkulátor baszod.</h2>
+            <h2>Túlóraminusz kalkulátor.</h2>
         </div>
         <div class="list">
                 <form>
-                    <label for="bonusz">Ide írd az óránkénti bónuszod, baszod!</label>
+                    <label for="bonusz">Ide írd az óránkénti bónuszod!</label>
                     <input type="text" name="Óránkénti bónuszod?" id="bonus" required/><br/><br/>
-                    <label for="ledolgora">Ide írd a ledolgozott óraszámod, baszod!</label>
+                    <label for="ledolgora">Ide írd a ledolgozott óraszámod!</label>
                     <input type="text" name="Ledolgozott óraszámod?" id="ora" required/><br/><br/>
-                    <label for="alapber">Ide írd a óránkénti alapbéred, baszod!</label>
+                    <label for="alapber">Ide írd a óránkénti alapbéred!</label>
                     <input type="text" name="óránkénti normál béred?" id="ber" required/><br/><br/>
                 </form>
             <input type="text" id="eredmeny"/>
