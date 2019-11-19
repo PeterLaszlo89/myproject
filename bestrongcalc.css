@@ -6,6 +6,11 @@ body{
     color: green;
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 400px;
+  }
+}
 .logo{
   
     animation-name: fadeInDown;
@@ -16,6 +21,12 @@ body{
     animation-timing-function: ease-in-out;
 
     opacity: 0;
+}
+@media (max-width: 400px) {
+  .logo img {
+      max-width: 70%;
+      max-height: auto;
+  }
 }
 @keyframes fadeInDown {
     from {
@@ -53,10 +64,19 @@ body{
     background-color: #f2f2f2;
     padding: 20px;
 }
+@media (max-width: 400px) {
+  .list {
+      max-width: 100%;
+      max-height: auto;
+  }
+}
 input[type=text]{
     float: right;
     display: inline-block;
     border: 1px solid green;
     border-radius: 4px;
     box-sizing: border-box;
+}
+#eredmeny{
+    float: bottom;
 }
