@@ -17,8 +17,8 @@ body{
   }
 }
 .logo{
-    width:400px;
-    height:auto;
+    width: 400px;
+    height: auto;
     animation-name: fadeInDown;
     animation-duration: 1.5s;
     animation-delay: 1.5s;
