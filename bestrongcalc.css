@@ -17,6 +17,8 @@ body{
   }
 }
 .logo{
+    display: flexbox;
+    justify-content: space-evenly;
     margin: 0;
     padding: 5rem;
     align-items: center;
