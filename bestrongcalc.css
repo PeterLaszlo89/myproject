@@ -4,9 +4,8 @@ body{
     margin: 0;
     padding: 0;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    opacity: 1;
     font-family: 'Anton', sans-serif;
     font-size: 25px;
     color: green;
